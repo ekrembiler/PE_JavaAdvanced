@@ -1,4 +1,4 @@
-package be.pxl.ja.image;
+package image;
 
 public class RGBPixel implements PixelToInt {
     private int red;

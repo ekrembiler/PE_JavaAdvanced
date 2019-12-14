@@ -27,20 +27,7 @@ public class City implements DistanceFunction<City> {
 		double dist = Math.sin(radLatitude) * Math.sin(radOtherLatitude) + Math.cos(radLatitude) * Math.cos(radOtherLatitude) * Math.cos(radTheta);
 		dist = Math.acos(dist);
 		dist = Math.toDegrees(dist);
-		dist = dist * 60 * 1.1515 * 1.609344;
+    dist = dist * 60 * 1.1515 * 1.609344;
 		return dist;
 	}
-
-	/*
-		Source: https://www.geodatasource.com/developers/java
-	    Calculates the distance between 2 points when given latitude and longitude in decimal degrees
-
-		double radTheta = Math.toRadians(longitude - other.longitude);
-		double radLatitude = Math.toRadians(latitude);
-		double radOtherLatitude = Math.toRadians(other.latitude);
-		double dist = Math.sin(radLatitude) * Math.sin(radOtherLatitude) + Math.cos(radLatitude) * Math.cos(radOtherLatitude) * Math.cos(radTheta);
-		dist = Math.acos(dist);
-	dist = Math.toDegrees(dist);
-		dist = dist * 60 * 1.1515 * 1.609344;
-	 */
 }

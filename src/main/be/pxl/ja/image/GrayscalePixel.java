@@ -1,4 +1,4 @@
-package be.pxl.ja.image;
+package image;
 
 import java.awt.*;
 
