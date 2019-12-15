@@ -1,5 +1,9 @@
 package image;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
 public class RGBPixel implements PixelToInt {
     private int red;
     private int green;
@@ -24,4 +28,9 @@ public class RGBPixel implements PixelToInt {
         return "(" + red + ", " + green + ", " + blue + ")";
     }
 
+    public int ConvertToGrayscale() {
+      final int v = (red + green + blue) / 3;
+
+      return v;
+    }
 }
