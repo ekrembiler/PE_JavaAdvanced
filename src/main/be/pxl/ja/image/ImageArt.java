@@ -37,6 +37,18 @@ public class ImageArt {
         grayscalePixelsLists.add(grayscalePixels);
       }
       ImageWriter.writeImage(writeImage,grayscalePixelsLists);
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
     private static Map<GrayscalePixel, RGBPixel> createTranslationMap(List<RGBPixel> faireyColors, TreeSet<GrayscalePixel> allGreyscalePixels) {

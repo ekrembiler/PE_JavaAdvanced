@@ -1,25 +1,32 @@
 package image;
+import common.DistanceFunction;
 
 import java.awt.*;
 
-public class GrayscalePixel implements PixelToInt {
-    private int greyscale;
+import static java.lang.Math.abs;
 
-    public GrayscalePixel(int greyscale) {
-        this.greyscale = greyscale;
-    }
+public class GrayscalePixel implements PixelToInt, DistanceFunction<GrayscalePixel> {
+  private int greyscale;
 
-    public int getGreyscale() {
-        return greyscale;
-    }
+  public GrayscalePixel(int greyscale) {
+    this.greyscale = greyscale;
+  }
 
-    @Override
-    public int toRGB() {
-        return new Color(greyscale, greyscale, greyscale).getRGB();
-    }
+  public int getGreyscale() {
+    return greyscale;
+  }
 
-    @Override
-    public String toString() {
-        return Integer.toString(greyscale);
-    }
+  @Override
+  public int toRGB() {
+    return new Color(greyscale, greyscale, greyscale).getRGB();
+  }
+
+  @Override
+  public String toString() {
+    return Integer.toString(greyscale);
+  }
+
+  public double distance(GrayscalePixel distance) {
+    return abs(greyscale - distance.greyscale);
+  }
 }
