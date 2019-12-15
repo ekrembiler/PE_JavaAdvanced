@@ -18,7 +18,9 @@ public class City implements DistanceFunction<City> {
 		return name;
 	}
 
-
+	public String getName() {
+		return name;
+	}
 
 	public double distance(City distance) {
 		double radTheta = Math.toRadians(longitude - distance.longitude);
