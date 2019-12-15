@@ -5,7 +5,7 @@ import java.awt.*;
 
 import static java.lang.Math.abs;
 
-public class GrayscalePixel implements PixelToInt, DistanceFunction<GrayscalePixel> {
+public class GrayscalePixel implements PixelToInt, DistanceFunction<GrayscalePixel>, Comparable<GrayscalePixel> {
   private int greyscale;
 
   public GrayscalePixel(int greyscale) {
@@ -28,5 +28,12 @@ public class GrayscalePixel implements PixelToInt, DistanceFunction<GrayscalePix
 
   public double distance(GrayscalePixel distance) {
     return abs(greyscale - distance.greyscale);
+  }
+
+  public int compareTo(GrayscalePixel compareGrayscalePixel) {
+
+    int compareGreyscale = ((GrayscalePixel) compareGrayscalePixel).getGreyscale();
+    return this.greyscale - compareGreyscale;
+
   }
 }
