@@ -24,18 +24,6 @@ public class RGBPixel implements PixelToInt {
     return rgb;
   }
 
-  public int getRed() {
-    return red;
-  }
-
-  public int getGreen() {
-    return green;
-  }
-
-  public int getBlue() {
-    return blue;
-  }
-
   @Override
   public String toString() {
     return "(" + red + ", " + green + ", " + blue + ")";

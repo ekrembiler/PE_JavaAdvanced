@@ -48,20 +48,47 @@ public class ImageArt {
     List<List<RGBPixel>> fairyPixels = new ArrayList<>();
     for (List<GrayscalePixel> e: grayscalePixelsLists) {
       List<RGBPixel> rgbPixels = new ArrayList<>();
-      GrayscalePixel closest = map.keySet().iterator().next();
       for (GrayscalePixel f: e) {
-
-        for (Map.Entry<GrayscalePixel, RGBPixel> entry : map.entrySet()){
-          if (f.compareTo(entry.getKey()) < f.compareTo(closest)){
-            closest = entry.getKey();
+        double distance = f.distance((GrayscalePixel) map.keySet().toArray()[0]);
+        RGBPixel pixel = (RGBPixel) map.values().toArray()[0];
+        for (Map.Entry<GrayscalePixel, RGBPixel> entry : map.entrySet()) {
+          if (f.distance(entry.getKey()) <= distance) {
+            distance = f.distance(entry.getKey());
+            pixel = entry.getValue();
           }
         }
-        RGBPixel pixel = new RGBPixel(map.get(closest).getRed(),map.get(closest).getGreen(),map.get(closest).getBlue());
         rgbPixels.add(pixel);
       }
       fairyPixels.add(rgbPixels);
-    }
+  }
     ImageWriter.writeImage(writeFairyImage, fairyPixels);
+
+
+
+
+
+
+
+//    TreeSet<GrayscalePixel> grayscaleTreeSet = new TreeSet<GrayscalePixel>();
+//    grayscalePixelsLists.stream().forEach(e -> e.stream().forEach(f -> grayscaleTreeSet.add(f)));
+//    Map<GrayscalePixel, RGBPixel> map = createTranslationMap(faireyColors, grayscaleTreeSet);
+//    List<List<RGBPixel>> fairyPixels = new ArrayList<>();
+//    for (List<GrayscalePixel> e: grayscalePixelsLists) {
+//      List<RGBPixel> rgbPixels = new ArrayList<>();
+//      GrayscalePixel closest = map.keySet().iterator().next();
+//      for (GrayscalePixel f: e) {
+//
+//        for (Map.Entry<GrayscalePixel, RGBPixel> entry : map.entrySet()){
+//          if (f.compareTo(entry.getKey()) < f.compareTo(closest)){
+//            closest = entry.getKey();
+//          }
+//        }
+//        RGBPixel pixel = new RGBPixel(map.get(closest).getRed(),map.get(closest).getGreen(),map.get(closest).getBlue());
+//        rgbPixels.add(pixel);
+//      }
+//      fairyPixels.add(rgbPixels);
+//    }
+//    ImageWriter.writeImage(writeFairyImage, fairyPixels);
 
 
 

@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5b4dfaf3-c99e-4111-b3aa-c4a9dd288d2e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/be/pxl/ja/image/GrayscalePixel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/be/pxl/ja/image/GrayscalePixel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/be/pxl/ja/image/ImageArt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/be/pxl/ja/image/ImageArt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/be/pxl/ja/image/RGBPixel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/be/pxl/ja/image/RGBPixel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/grayscale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/image/GrayscalePixel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/image/GrayscalePixel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fairy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fairy.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/image/ImageArt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/image/ImageArt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/image/RGBPixel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/image/RGBPixel.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,33 +18,18 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/be/pxl/ja/image/ImageArt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="53" column="73" lean-forward="true" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1618#1634#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fairy.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/be/pxl/ja/image/RGBPixel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#519#520#0" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/grayscale.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/tokio.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -65,8 +47,8 @@
         <option value="$PROJECT_DIR$/src/main/be/pxl/ja/city/DistancesBetweenCities.java" />
         <option value="$PROJECT_DIR$/src/main/be/pxl/ja/common/DistanceUtil.java" />
         <option value="$PROJECT_DIR$/src/main/be/pxl/ja/image/GrayscalePixel.java" />
-        <option value="$PROJECT_DIR$/src/main/be/pxl/ja/image/RGBPixel.java" />
         <option value="$PROJECT_DIR$/src/main/be/pxl/ja/image/ImageArt.java" />
+        <option value="$PROJECT_DIR$/src/main/be/pxl/ja/image/RGBPixel.java" />
       </list>
     </option>
   </component>
@@ -89,6 +71,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,14 +141,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576396387266" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576440146193" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Jaar 1/2/uitsturen_JavaEssentials_28012019" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -244,16 +226,18 @@
       <workItem from="1576345166543" duration="8428000" />
       <workItem from="1576380282570" duration="1033000" />
       <workItem from="1576381476127" duration="7907000" />
+      <workItem from="1576429572050" duration="1060000" />
+      <workItem from="1576438722237" duration="1422000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33098000" />
+    <option name="totallyTimeSpent" value="35580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17963752" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18283582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -436,17 +420,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/be/pxl/ja/image/RGBPixel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/be/pxl/ja/image/ImageArt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        <state relative-caret-position="51">
+          <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#1627#1643#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/be/pxl/ja/image/RGBPixel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -459,17 +449,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fairy.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/be/pxl/ja/image/ImageArt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="53" column="73" lean-forward="true" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1618#1634#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
   </component>
   <component name="masterDetails">
